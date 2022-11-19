@@ -5,8 +5,8 @@ This contianer can run on your local machine and provide all your CPUs and GPUs 
 ---
 ##  GPU support (Windows Only)
 1. Install [Docker](https://docs.docker.com/get-docker/). 
-2. From this repo, build the image `docker build -f Dockerfile-gpu -t colab .`
-3. Start the container `docker run --rm -p 8888:8888 --gpus all colab`
+2. From this repo, build the image `docker build -f Dockerfile-gpu -t colab-gpu .`
+3. Start the container `docker run --rm -p 8888:8888 --gpus all colab-gpu`
 4. Take the token provided in the output, and provide it to colab when selecting local runtime (must be `localhost`, not `127.0.0.1`). 
 5. Kill the contiainer (control-c), and you've deleted the runtime. 
 
